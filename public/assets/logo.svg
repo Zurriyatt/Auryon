@@ -1,0 +1,77 @@
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer particle aura -->
+  <g>
+    <circle cx="30" cy="30" r="1.5" fill="#3B82F6" opacity="0.2"/>
+    <circle cx="150" cy="40" r="2" fill="#60A5FA" opacity="0.25"/>
+    <circle cx="60" cy="150" r="1.2" fill="#3B82F6" opacity="0.15"/>
+    <circle cx="110" cy="120" r="1.8" fill="#60A5FA" opacity="0.2"/>
+    <circle cx="90" cy="20" r="1.5" fill="#3B82F6" opacity="0.2"/>
+    <circle cx="20" cy="90" r="1.2" fill="#60A5FA" opacity="0.15"/>
+  </g>
+
+  <!-- Main outer detailed circle -->
+  <circle cx="90" cy="90" r="75" stroke="url(#outerGradient)" stroke-width="4" filter="url(#glow)"/>
+  
+  <!-- Decorative ticks / spikes around the circle -->
+  <g stroke="#60A5FA" stroke-width="1" opacity="0.5">
+    <line x1="90" y1="15" x2="90" y2="25"/>
+    <line x1="90" y1="155" x2="90" y2="145"/>
+    <line x1="15" y1="90" x2="25" y2="90"/>
+    <line x1="165" y1="90" x2="155" y2="90"/>
+    <line x1="45" y1="45" x2="52" y2="52"/>
+    <line x1="135" y1="135" x2="128" y2="128"/>
+    <line x1="45" y1="135" x2="52" y2="128"/>
+    <line x1="135" y1="45" x2="128" y2="52"/>
+  </g>
+
+  <!-- Aura circle -->
+  <circle cx="90" cy="90" r="70" stroke="url(#auraGradient)" stroke-width="3" filter="url(#glow)"/>
+
+  <!-- Stylized "A" Monogram with negative space arrow -->
+  <path d="M65 125 L90 50 L115 125 L100 125 L90 90 L80 125 Z" fill="#1E40AF"/>
+  
+  <!-- Hidden arrow / forward motion -->
+  <path d="M85 90 L90 75 L95 90" stroke="#60A5FA" stroke-width="2" fill="none" opacity="0.6"/>
+
+  <!-- Inner glow -->
+  <path d="M65 120 L90 55 L115 120 L100 120 L90 90 L80 120 Z" fill="url(#innerGlow)" opacity="0.6"/>
+
+  <!-- Inner shine lines -->
+  <path d="M90 50 L90 125" stroke="url(#shineGradient)" stroke-width="1.2" opacity="0.5"/>
+  <path d="M75 95 L105 95" stroke="url(#shineGradient)" stroke-width="1" opacity="0.4"/>
+
+  <defs>
+    <!-- Outer gradient -->
+    <radialGradient id="outerGradient" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Aura gradient -->
+    <radialGradient id="auraGradient" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Inner glow gradient -->
+    <radialGradient id="innerGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#60A5FA" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#1E3A8A" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Inner shine gradient -->
+    <linearGradient id="shineGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#93C5FD" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Glow filter -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+</svg>
