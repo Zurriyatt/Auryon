@@ -8,8 +8,7 @@ import { authOptions } from "../../auth/[...nextauth]/route";
 import { getServerSession } from "next-auth";
 import { cookies } from "next/headers";
 import jwt from "jsonwebtoken";
-import { SessionContext } from "next-auth/react";
-import { PathParamsContext } from "next/dist/shared/lib/hooks-client-context.shared-runtime";
+
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
   api_key: process.env.CLOUDINARY_API_KEY,
@@ -114,8 +113,8 @@ export async function POST(request) {
   }
 }
 
-export async function GET(request, context) {
-  const param = context.params;
+export async function GET(request, {params}) {
+  const param = await params;
   const searchedUser = param.route;
 
   const cookieStore = await cookies();

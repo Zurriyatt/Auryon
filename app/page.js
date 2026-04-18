@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
+
 export default function Home() {
   const links = [
   { title: "About Us", href: "/aboutus" },
@@ -144,8 +145,8 @@ const itemVariants = {
               <span className="rounded-full h-[60px] w-[60px] bg-white/10 backdrop-blur-md border border-white/20 flex justify-center items-center">
                 <Image
                   src={item.img}
-                  width={50}
-                  height={50}
+                  width={77}
+                  height={77}
                   alt={item.text}
                   className="rounded-full"
                 />

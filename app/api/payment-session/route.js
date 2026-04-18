@@ -9,7 +9,7 @@ import jwt from "jsonwebtoken";
 import paymentSchema from "@/models/PaymentSchema";
 const stripe = new Stripe(process.env.STRIPE_PAY_SECRET_KEY);
 export async function GET(req) {
-  const cookiess = cookies();
+  const cookiess = await cookies();
   const token = cookiess.get("authToken");
   if (!cookiess) {
     return NextResponse.json({
