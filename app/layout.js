@@ -1,14 +1,21 @@
 import "./globals.css";
 import { Geist, Geist_Mono } from "next/font/google";
 import ClientLayout from "./RouteLayout";
-import Script from "next/script"; 
+import Script from "next/script";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
-const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
 
 export const metadata = {
   title: "Auryon - Fund Your Favorite One's Aura",
   description: "Aura booster web app by funding",
+  verification: {
+    google:
+      "google-site-verification=W8cw44IiVA46EHvogCSJWUjs8qQedZgXp6unXq4urO0",
+  },
 };
 
 export default function RootLayout({ children }) {
