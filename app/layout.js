@@ -14,7 +14,7 @@ export const metadata = {
   description: "Aura booster web app by funding",
   verification: {
     google:
-      "google-site-verification=W8cw44IiVA46EHvogCSJWUjs8qQedZgXp6unXq4urO0",
+      "google98bd7445b25ac9b3",
   },
 };
 
