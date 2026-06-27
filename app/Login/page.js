@@ -39,7 +39,6 @@ function Page() {
   
   const [isSubmitting, setIsSubmitting] = useState(false);
   const handleOneClick = async (e) => {
-    e.preventDefualt();
     const event = e.currentTarget.name
       
 sessionStorage.setItem("toast", JSON.stringify(toastLogin));
