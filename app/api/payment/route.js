@@ -22,8 +22,8 @@ export async function POST(req) {
         },
       ],
       mode: "payment",
-      success_url: `http://localhost:3000/Payment-success?session_id={CHECKOUT_SESSION_ID}&tuserName=${encodeURIComponent(jsonData.userName)}&comments=${encodeURI(jsonData.comment)}`,
-      cancel_url: "http://localhost:3000/payment-cancel",
+      success_url: `https://auryon.vercel.app/Payment-success?session_id={CHECKOUT_SESSION_ID}&tuserName=${encodeURIComponent(jsonData.userName)}&comments=${encodeURI(jsonData.comment)}`,
+      cancel_url: "https://auryon.vercel.app/payment-cancel",
     });
 
     return NextResponse.json({ success: true, url: session.url });
