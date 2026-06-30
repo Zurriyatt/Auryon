@@ -177,7 +177,7 @@ const itemVariants = {
           We believe in community power and collective support to turn dreams
           into reality. <br />
           Want more updates and features? Support us on{" "}
-          <span className="text-[#00CFFF] font-bold">kisukedevs_12</span>.
+          <span className="text-[#00CFFF] font-bold">Zurriyatt</span>.
         </p>
       </motion.div>
       <footer className="relative w-full min-h-[35vh] bg-gradient-to-br from-[#0F111A] via-[#0F111A] to-[#0F111A] flex flex-col items-center justify-center text-gray-300 overflow-hidden">
