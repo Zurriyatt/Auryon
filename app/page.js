@@ -176,7 +176,7 @@ const itemVariants = {
           inspiring others — Auryon is your launchpad. <br />
           We believe in community power and collective support to turn dreams
           into reality. <br />
-          Want more updates and features? Support us on{" "}
+          Want more updates and features? Support us on Github profile:{" "}
           <span className="text-[#00CFFF] font-bold">Zurriyatt</span>.
         </p>
       </motion.div>
