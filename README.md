@@ -1,41 +1,20 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 💰 Auryon — Capital Allocation & Alternative Funding Web Dashboard
 
-## Getting Started
+#Preview : https://auryon.vercel.app/
 
-First, run the development server:
+Auryon is a high-utility, Patreon-inspired alternative capital and funding platform designed to handle transactional user states, target trackers, and dynamic financial workflows. It features a complete end-to-end user dashboard ecosystem that handles live funding pools and secure metric visualization.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Key Features
+- **Interactive Funding Dashboard:** Dynamic client-side layout detailing active funding rounds, target percentages, and investment history.
+- **Secure Guest Authentication Support:** Native "Guest Login" access allowing recruiters and stakeholders to immediately stress-test internal states without friction.
+- **Full-Stack Transaction Logs:** Secure backend pipelines mapping investor allocations to dynamic progress visualizer nodes.
+- **Robust REST API Layers:** Scalable Express backend layers managing safe database mutations and records.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Built With
+- **Stack:** [Next.js](https://nextjs.org), [Node.js](https://nodejs.org), Express.js
+- **Database Engine:** [MongoDB](https://mongodb.com) / [Mongoose](https://mongoosejs.com)
+- **Styling:** Custom Modular CSS Architecture , Tail Wind used.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-=======
-# Auryon-GM-Project
-A GrandMaster and MY first big Project with Paymennt Mangement and Both Manual  and One Click Automatiic Authorization in data base , Fully functional with extreme quality UI 
->>>>>>> 9fcd1381b8da155d051db339b33a31deef4e28ba
+## ⚙️ Engineering & Architecture Insights
+- **State Integrity:** Managed fluid dynamic dashboard metrics securely, ensuring multi-layer frontend updates accurately match backend query parameters.
+- **API Security:** Formatted Mongoose validation checks on the ingestion layer to guarantee that funding inputs strictly match strict floating-point numerical values.
